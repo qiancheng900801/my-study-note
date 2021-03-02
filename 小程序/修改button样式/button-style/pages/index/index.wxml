@@ -1,0 +1,3 @@
+<view id="btn">
+	点击<button plain size="mini">前往app</button>查看~
+</view>
