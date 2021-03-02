@@ -1,0 +1,11 @@
+<wxs src="../../utils/tools.wxs" module="tools" />
+<view>
+  正确率：{{tools.accuracy(1,5)}}
+</view>
+
+<view class="index">
+  <tagBar selectedBar="{{tabBarIndex}}" dataSource="{{list}}" bind:tabClick="handleClk"></tagBar>
+</view>
+
+
+<navBar navList="{{navList}}" navIndex="{{navIndex}}" bind:checkBar='checkBar'></navBar>

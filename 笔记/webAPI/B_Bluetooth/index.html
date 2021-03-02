@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <button id="the-button">Try it</button>
+</body>
+<script>
+  const button = document.querySelector('#the-button');
+  button.addEventListener('click', function () {
+    navigator.bluetooth.requestDevice({
+      filters: [{
+        services: ['battery_service']
+      }]
+    }).then(device => {
+      console.log(11);
+      console.log('Got device:', device.name);
+      console.log('id:', device.id);
+    });
+  });
+</script>
+
+</html>

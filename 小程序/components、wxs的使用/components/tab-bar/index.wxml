@@ -1,0 +1,5 @@
+<view class="tab-bar">
+  <view class="{{index==selectedBar?'active':''}}" data-key="{{index}}" bindtap="handleTabBar" wx:for="{{dataSource}}">
+    <text>{{item}}</text>
+  </view>
+</view>

@@ -1,0 +1,6 @@
+var accuracy = function (correct_count, done_count) {
+  return Math.round((correct_count / done_count) * 100)
+}
+module.exports = {
+  accuracy: accuracy
+}

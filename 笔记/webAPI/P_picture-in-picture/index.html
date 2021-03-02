@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PiP</title>
+  <style>
+    video {
+      width: 800px;
+      height: 600px;
+    }
+  </style>
+</head>
+
+<body>
+  <video src="https://vd2.bdstatic.com/mda-kiiddqvaaxaerddv/sc/cae_h264_clips/mda-kiiddqvaaxaerddv.mp4" id="video"
+    controls></video>
+  <button id="togglePipButton">开启/关闭画中画</button>
+</body>
+<script>
+  console.log(document.pictureInPictureEnabled);
+  // 判断是否支持PIP
+
+  togglePipButton.hidden = !document.pictureInPictureEnabled
+
+  togglePipButton.addEventListener('click', (event) => {
+    if (!document.pictureInPictureElement)
+      video.requestPictureInPicture()
+    // video.requestPictureInPicture().then((pictureInPictureWindow) => {
+    //   pictureInPictureWindow.addEventListener('resize', (event) => {
+    //     console.log(event.target.width, event.target.width);
+    //   })
+    // })
+    else
+      document.exitPictureInPicture()
+  })
+
+  video.addEventListener('enterpictureinpicture', (event) => {
+    console.log(event.pictureInPictureWindow);
+
+    event.pictureInPictureWindow.addEventListener('resize', sizeChange)
+  })
+
+  video.addEventListener('leavepictureinpicture', (event) => { })
+
+  sizeChange = (event) => {
+    console.log(`窗口高${event.target.width}--宽${event.target.height}`);
+  }
+</script>
+
+</html>

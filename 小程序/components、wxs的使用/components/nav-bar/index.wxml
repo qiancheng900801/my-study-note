@@ -1,0 +1,5 @@
+<view class="scrollBar">
+  <view class="item {{index==navIndex?'active':''}}" wx:for="{{navList}}" wx:key="index" bindtap="tabClk" data-key="{{index}}">
+    <text>{{item}}</text>
+  </view>
+</view>
