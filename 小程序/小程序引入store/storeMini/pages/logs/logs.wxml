@@ -1,0 +1,23 @@
+<view>
+  <form id="form" bindsubmit="handleSubmit" bindreset="handleReset">
+    <label>
+      <text>姓名：</text>
+      <input type="text" name="name" value="{{$state.userInfo.name}}" />
+    </label>
+    <label>
+      <text>年龄：</text>
+      <input type="text" name="age" value="{{$state.userInfo.age}}" />
+    </label>
+    <label>
+      <text>性别：</text>
+      <input type="text" name="sex" value="{{$state.userInfo.sex}}" />
+    </label>
+    <label>
+      <button plain size='mini' type="primary" form-type="submit">提交</button>
+      <button plain size='mini' type="submit" form-type="reset">重置</button>
+
+    </label>
+
+  </form>
+
+</view>

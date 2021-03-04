@@ -1,0 +1,14 @@
+form label {
+  display: flex;
+  align-items: center;
+}
+input {
+  border:1px solid #ccc;
+  margin-top: 10rpx;
+  flex: 0.8;
+}
+#form button {
+  padding:0;
+  margin: 0;
+  border:none;
+}

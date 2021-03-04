@@ -8,8 +8,6 @@ Component({
       type: Array,
       value: ['详情', '列表'],
       observer: (newVar, oldVal) => {
-        console.log(newVar);
-        console.log(oldVal);
       }
     },
     selectedBar: {
@@ -36,6 +34,7 @@ Component({
         tarBarIndex: key
       })
       this.triggerEvent('tabClick', { key })
+      console.log(getCurrentPages());
     }
   },
   lifetimes: {

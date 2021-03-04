@@ -2,7 +2,7 @@
   "name": "koa-mongodb",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,7 +11,9 @@
   "license": "ISC",
   "dependencies": {
     "koa": "^2.13.1",
+    "koa-bodyparser": "^4.3.0",
     "koa-router": "^10.0.0",
+    "lodash": "^4.17.21",
     "mongodb": "^3.6.4"
   }
 }

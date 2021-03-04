@@ -4,40 +4,25 @@ Page({
    * 页面的初始数据
    */
   data: {
-    list: ['详情', '列表', '选项'],
-    tabBarIndex: 1,
-    navList: ['英语', '数学', '物理', '化学'],
-    navIndex: 0
-  },
-  handleClk(e) {
-    this.setData({
-      tabBarIndex: e.detail.key
-    })
-  },
-  checkBar(e) {
-    let { key } = e.detail
-    this.setData({
-      navIndex: key
-    })
-  },
-  getAPI1() {
+    userInfo: {}
 
   },
-  getAPI2() {
-    console.log('api2');
+  handleSubmit(e) {
+    console.log(e.detail.value);
+    let userInfo = e.detail.value
+    getApp().store.setState({
+      userInfo
+    })
+  },
+  handleReset(e) {
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    new Promise((res, rej) => {
-      this.getAPI1()
-      res()
-    }).then(res => {
-      this.getAPI2()
-      res
-    })
+
   },
 
   /**

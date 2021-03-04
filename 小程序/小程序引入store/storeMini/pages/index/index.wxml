@@ -1,0 +1,5 @@
+<view>
+  <view>姓名：{{$state.userInfo.name}}</view>
+  <view>年龄：{{$state.userInfo.age}}</view>
+  <view>性别：{{$state.userInfo.sex}}</view>
+</view>
