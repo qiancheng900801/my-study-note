@@ -1,0 +1,49 @@
+.nav-bar {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  background: #fff;
+}
+
+.nav-bar .nav-main {
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+
+.nav-bar .nav-main .nav-menu {
+  position: absolute;
+  height: 100%;
+  width: 87px;
+  border-radius: 32px;
+  border: 1px solid #eee;
+  box-sizing: border-box;
+  display: flex;
+}
+.nav-bar .nav-main .nav-menu view {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.nav-bar .nav-main .nav-menu .back::after {
+  content: "";
+  height: 80%;
+  border-left: 1px solid #eee;
+  position: absolute;
+  right: 0;
+}
+.nav-menu image {
+  width: 22px;
+  height: 22px;
+}
+
+
+.nav-bar .nav-main .nav-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

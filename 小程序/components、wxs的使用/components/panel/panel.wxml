@@ -1,0 +1,5 @@
+<view class="panel" style="padding-top:{{$state.navBarHeight}}px;padding-bottom:48px;">
+  <scroll-view scroll-y class="scroll-view" lower-threshold="{{0}}" bindscrolltolower="scrolltolower">
+    <slot></slot>
+  </scroll-view>
+</view>

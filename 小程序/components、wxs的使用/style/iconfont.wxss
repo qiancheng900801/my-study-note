@@ -1,0 +1,24 @@
+@font-face {font-family: "iconfont";
+  src: url('//at.alicdn.com/t/font_2378171_czg3kje89tt.eot?t=1614923621138'); /* IE9 */
+  src: url('//at.alicdn.com/t/font_2378171_czg3kje89tt.eot?t=1614923621138#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAMoAAsAAAAABxgAAALbAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDBgqBfIFjATYCJAMMCwgABCAFhG0HORssBsgOJYnAoABgIAFgPHzt93ru7j4IoUsUsiN2gCoTBQWhqipcK12VqWYj/mFdVY0FnKUP0ItoVBrjdObMN+Ef/ATs81xOrwUUyPyW5bT2fj4mYIKB7oFH4QYukIC8YeyCF3ieQLdJVYSTbn36Q7jCnhaIz5ahQHghrCgs1wp1w9oC8R1CtGm+eBP4Fn0//sNGhIOkymDPvXrtqkOHX+HPhknT/k8zPCBAspwTbBMZS0AhnhvTTyTBmJJutdxdWitCWir2/z+R2NDWB/3jJaIGu7oXzMFM4le4xyf4NYyEBDKoUXAJPEH96NR3TSNCcbxnQSpdPj3LWLJw27R0HRdN2xopTByoLj684GCyvnVlyqJNUVGLFoH49U7TuCP3BGnJkrSohVvSlqzWl24tity8XRCm7yiN2rQt40KblH/z5n2o+OA7/lX+D5Wqrfgf3zAV7FxfsbWUf49HlY96PFYdXF/Uojal2dqTEbXlDR3PiefqO5ZXR9yY1jy5fUV/6PkeenP00dG3U/6kkQUyvAB0zqdfuQPInshPpR6/+jfWvxwYNCquzdfwKBngp/ECYbBzosAwL2hvxBP8WMnArmLIbEsumtgTW95se6IzAYXcpwO2f9jT6dqxwdWE1liGpDGBrDVFKYwlVHpsodbaR7dF3Tf3GMFIokQAC2YDhEF7kPT7gWzQLUphPEFl3FvUBkNCt4dI2rPHTFiRnRkqHHWijieW5vNS18Yj49q+aATdCsvLItZAZI4VI/U1deVcd/QiW2KBM8Zo4JwSynwe0g1chm63j/iZz0aN15ic+1vV1tKmK9VoPg9EOsYgBYd0hGo8wqLx8aLBYC6y8vm+kCHITcE66uqCAyHGYQ1P1KtRN4DSXe0dVPcoZBxjGBpwHEVQjI8H0Q04kdtJ+xD+5lE2pOFqmBOSfq3Uon50qLpme63nB4pYE/bROURBEmSoXxWvGbRCHdMXHI8AAA==') format('woff2'),
+  url('//at.alicdn.com/t/font_2378171_czg3kje89tt.woff?t=1614923621138') format('woff'),
+  url('//at.alicdn.com/t/font_2378171_czg3kje89tt.ttf?t=1614923621138') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('//at.alicdn.com/t/font_2378171_czg3kje89tt.svg?t=1614923621138#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.iconfanhui:before {
+  content: "\e608";
+}
+
+.iconshouye:before {
+  content: "\e65b";
+}

@@ -1,6 +1,4 @@
 {
   "usingComponents": {
-    "tagBar": "/components/tab-bar",
-    "navBar": "/components/nav-bar"
   }
 }

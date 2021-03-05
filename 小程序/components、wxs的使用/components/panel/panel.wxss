@@ -1,0 +1,8 @@
+/* components/panel/panel.wxss */
+.panel {
+  height: 100%;
+  box-sizing: border-box;
+}
+.panel .scroll-view {
+  height: 100%;
+}

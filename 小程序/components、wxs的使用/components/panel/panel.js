@@ -1,4 +1,4 @@
-// components/foot-bar/foot-bar.js
+// components/panel/panel.js
 Component({
   /**
    * 组件的属性列表
@@ -18,6 +18,8 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    scrolltolower(){
+      console.log(11);
+    }
   }
 })

@@ -1,11 +1,12 @@
 <wxs src="../../utils/tools.wxs" module="tools" />
-<view>
-  正确率：{{tools.accuracy(1,5)}}
-</view>
+<nav-bar></nav-bar>
+<!-- <view style="height:2000rpx;background:#c6c6c6;margin-top:{{$state.navBarHeight}}px">
+  正确率：{{tools.accuracy(1,5)}}%
+</view> -->
+<panel>
+  <view wx:for="{{[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]}}">
+    <view>今天</view>
+    <view>天气好</view>
+  </view>
+</panel>
 
-<view class="index">
-  <tagBar selectedBar="{{tabBarIndex}}" dataSource="{{list}}" bind:tabClick="handleClk"></tagBar>
-</view>
-
-
-<navBar navList="{{navList}}" navIndex="{{navIndex}}" bind:checkBar='checkBar'></navBar>
