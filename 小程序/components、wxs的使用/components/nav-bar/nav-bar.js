@@ -4,6 +4,14 @@ Component({
    * 组件的属性列表
    */
   properties: {
+    showNavBar: {
+      type: Boolean,
+      value: true
+    },
+    title:{
+      type:String,
+      value:''
+    }
 
   },
 
@@ -21,10 +29,12 @@ Component({
    */
   methods: {
     goBack() {
-      console.log('back');
+      wx.navigateBack()
     },
     goHome() {
-      console.log('home');
+      wx.reLaunch({
+        url: '/pages/index/index',
+      })
     },
   },
   lifetimes: {
@@ -32,7 +42,6 @@ Component({
     attached() {
       let MenuButton = wx.getMenuButtonBoundingClientRect()
       let systemInfo = wx.getSystemInfoSync()
-      console.log(systemInfo);
       this.setData({
         MenuButton,
         systemInfo
@@ -41,6 +50,8 @@ Component({
       getApp().store.setState({
         navBarHeight
       })
+
+      
     },
     detached() { }
   }

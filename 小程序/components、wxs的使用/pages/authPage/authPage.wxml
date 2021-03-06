@@ -1,0 +1,4 @@
+<nav-bar></nav-bar>
+<panel>
+  <button bindtap="auth">授权</button>
+</panel>

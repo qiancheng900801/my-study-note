@@ -1,12 +1,6 @@
-import Store from './utils/store'
-const store = new Store({
-  state:{
-    navBarHeight:60
-  },
-  methods:{
-
-  }
-})
+import store from './store/index'
+import extraNavigateTo from './utils/extraNavigateTo'
+import before from './router/index'
 App({
   store,
 
@@ -14,7 +8,7 @@ App({
    * 当小程序初始化完成时，会触发 onLaunch（全局只触发一次）
    */
   onLaunch: function () {
-
+    extraNavigateTo(before)
   },
 
   /**

@@ -4,7 +4,10 @@ Component({
    * 组件的属性列表
    */
   properties: {
-
+    showTabBar: {
+      type: Boolean,
+      value: false
+    }
   },
 
   /**
@@ -18,8 +21,10 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    scrolltolower(){
-      console.log(11);
+    scrolltolower() {
+      let pages = getCurrentPages()
+      let page = pages[pages.length - 1]
+      page.onPullDownRefresh()
     }
   }
 })

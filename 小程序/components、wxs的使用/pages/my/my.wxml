@@ -1,3 +1,9 @@
 <!--pages/my/my.wxml-->
-<nav-bar></nav-bar>
-<text>pages/my/my.wxml</text>
+<nav-bar showNavBar="{{false}}" title="我的"></nav-bar>
+<panel showTabBar>
+<view>
+  <button bindtap="myinfo">我的信息</button>
+  <button bindtap="aboutme">关于我</button>
+</view>
+
+</panel>

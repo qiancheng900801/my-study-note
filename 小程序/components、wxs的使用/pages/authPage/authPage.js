@@ -1,3 +1,4 @@
+// pages/authPage/authPage.js
 Page({
 
   /**
@@ -6,16 +7,15 @@ Page({
   data: {
 
   },
-  clk(){
-    wx.navigateTo({
-      url: '/pages/list/list',
-    })
+  auth(){
+    wx.setStorageSync('auth',"0001")
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+
   },
 
   /**
@@ -29,12 +29,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    if (typeof this.getTabBar === 'function' &&
-      this.getTabBar()) {
-      this.getTabBar().setData({
-        selected: 0
-      })
-    }
+
   },
 
   /**
@@ -55,7 +50,7 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-    console.log('index','down');
+
   },
 
   /**

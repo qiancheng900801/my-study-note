@@ -1,15 +1,15 @@
 <view class="nav-bar" style="height:{{MenuButton.bottom}}px;padding-bottom:{{bottom}}px;">
   <view class="nav-main" style="height:{{MenuButton.height}}px;bottom:{{bottom}}px">
-    <view class="nav-menu" style="left:{{systemInfo.windowWidth-MenuButton.right}}px">
+    <view class="nav-menu" style="left:{{systemInfo.windowWidth-MenuButton.right}}px" wx:if="{{showNavBar}}">
       <view class="back" bindtap="goBack">
-        <image src="/images/nav-bar/back.png"></image>
+        <image class="image" src="/images/nav-bar/back.png"></image>
       </view>
       <view class="home" bindtap="goHome">
-        <image src="/images/nav-bar/home.png"></image>
+        <image class="image" src="/images/nav-bar/home.png"></image>
       </view>
     </view>
     <view class="nav-title" style="{{leftStyle}}">
-      这个是首页<text class="iconfont iconfanhui"></text>
+      <text>{{title}}</text>
     </view>
   </view>
 </view>

@@ -7,6 +7,16 @@ Page({
   data: {
 
   },
+  myinfo() {
+    wx.navigateTo({
+      url: '/pages/myInfo/myInfo',
+    })
+  },
+  aboutme() {
+    wx.navigateTo({
+      url: '/pages/aboutMe/aboutMe',
+    })
+  },
 
   /**
    * 生命周期函数--监听页面加载

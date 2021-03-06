@@ -1,12 +1,14 @@
 <wxs src="../../utils/tools.wxs" module="tools" />
-<nav-bar></nav-bar>
-<!-- <view style="height:2000rpx;background:#c6c6c6;margin-top:{{$state.navBarHeight}}px">
-  正确率：{{tools.accuracy(1,5)}}%
-</view> -->
-<panel>
+<nav-bar showNavBar="{{false}}" title="首页"></nav-bar>
+
+<panel showTabBar>
+
+  <view>
+    正确率：{{tools.accuracy(1,5)}}%
+  </view>
   <view wx:for="{{[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]}}">
     <view>今天</view>
     <view>天气好</view>
   </view>
+  <button bindtap="clk">下一页</button>
 </panel>
-
