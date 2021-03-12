@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    function myFunction(text) {
+      var oInput = document.createElement('label');
+      oInput.style = 'opacity: 0;position: absolute;left:-100px;top:-100px;';
+      oInput.innerHTML = text;
+      oInput.id = 'cpInput';
+      document.body.appendChild(oInput);
+      var range = document.createRange();
+      range.selectNode(document.getElementById('cpInput'));
+      var selection = window.getSelection();
+      if (selection.rangeCount > 0) {
+        selection.removeAllRanges();
+      }
+      selection.addRange(range);
+      document.execCommand('copy');
+      document.getElementById('cpInput').remove();
+    }
+    myFunction('11111')
+  </script>
+</body>
+
+</html>
