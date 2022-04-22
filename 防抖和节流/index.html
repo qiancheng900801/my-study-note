@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+            overflow: auto;
+        }
+
+        #box1 {
+            width: 100%;
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <input type="text" name="" id="ipt">
+
+    <div id="box">
+
+        <div id="box1"></div>
+
+    </div>
+    <script>
+        // 防抖：
+        /*  function debounce(fn, delay) {
+             let timer = 0
+             return function () {
+                 clearTimeout(timer)
+                 timer = setTimeout(() => {
+                     fn()
+                 }, delay)
+             }
+         }
+         function sayHello() {
+             console.log(document.getElementById('ipt').value);
+         }
+         document.getElementById('ipt').addEventListener('input', debounce(sayHello, 500)) */
+
+        // 节流
+
+        let box = document.getElementById('box')
+        // let flag = true
+        // box.addEventListener('scroll', (e) => {
+        //     // console.log(box.clientHeight, box.offsetHeight, box.scrollHeight);
+        //     // console.log(box.scrollTop, box.clientHeight, box.scrollHeight);
+
+        //     // 触底
+        //     if (box.scrollHeight <= (box.scrollTop + box.clientHeight)) {
+
+        //         if (!flag) return
+        //         flag = false
+        //         setTimeout(() => {
+        //             console.log(1111);
+        //             flag = true
+        //         }, 1000)
+
+
+
+        //     }
+        // })
+
+        function throttle(fn, delay) {
+            let lock = true
+            return function () {
+                if (!lock) return;
+                lock = false
+                setTimeout(() => {
+                    fn.apply(this, arguments)
+                    lock = true
+                }, delay);
+            }
+        }
+        function sayHi() {
+            console.log(111111111)
+        }
+
+        // box.addEventListener('scroll', () => {
+        // })
+        // box.addEventListener('click', throttle(sayHi, 1000))
+
+
+
+    </script>
+</body>
+
+</html>
